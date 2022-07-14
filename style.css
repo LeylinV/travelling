@@ -86,7 +86,8 @@ h1,h2,h3,h4,h5,h6{
 .intro__title{
 	display: inline-block;
 	margin: 0 auto;
-	width: 1070px;
+	max-width: 1070px;
+	width: 100%;
 
 	font-family: 'Cormorant SC', serif;
 	font-size: 72px;
@@ -100,13 +101,13 @@ h1,h2,h3,h4,h5,h6{
 	color: #728a6b;
 }
 
-
-
 .intro__subtitle{
 	display: block;
 	margin: 0 auto;
 	font-size: 24px;
-	width: 1070px;
+	max-width: 1070px;
+	width: 100%;
+
 	line-height: 1.2;
 	font-weight: 300;
 }
@@ -117,7 +118,6 @@ h1,h2,h3,h4,h5,h6{
 	text-decoration: none;
 	font-size: 20px;
 
-	vertical-align: center;
 	padding: 10px 80px;
 	margin: 60px 0 120px;
 
@@ -128,4 +128,130 @@ h1,h2,h3,h4,h5,h6{
 
 .intro__btn:hover{
 	color: #728a6b;
+}
+
+/* ADVANTAGES */
+
+.advantages{
+	margin: 60px auto;
+}
+
+.advantages__line{
+	display: flex;
+	justify-content: center;
+}
+
+.advantages__item{
+	width: 300px;
+	text-align: center;
+	margin: 0 10px;
+}
+
+.advantages__img{
+	border: solid #728a6b 2px;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin: 40px auto 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.advantages__title{
+	font-family: "Roboto" serif;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 600;
+	margin-top: 20px;
+}
+
+.advantages__text{
+	font-size: 17px;
+	color: #666;
+	margin-top: 10px;
+}
+
+/* MEET */
+.meet{
+	padding: 0 auto;
+	margin: 200px 0;
+}
+
+.meet__title{
+	font-family: 'Cormorant SC', serif;
+	font-size: 54px;
+	text-align: center;
+	font-weight: 400;
+}
+
+.meet__title span{
+	color: #728a6b;
+}
+
+.meet__title:after{
+	content: "";
+	display: block;
+	width: 200px;
+	height: 1px;
+	margin: 30px auto 0;
+	background-color: #333;
+}
+
+.meet__info{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.meet__photo{
+	width: 50%;
+}
+
+.meet__photo img{
+	width: 100%;
+}
+
+.meet__right{
+	width: 47%;
+}
+
+.meet__right h3{
+	margin-top: 30px;
+	font-family: 'Cormorant SC', serif;
+	font-size: 32px;
+	font-weight: 100;
+}
+
+.meet__right p{
+	font-size: 17px;
+	line-height: 1.4;
+	font-weight: 100;
+}
+
+.meet__btnblock{
+	text-align: center;
+}
+
+.meet__btn{
+	display: inline-block;
+	padding: 10px 30px;
+	margin: 70px;
+
+	text-decoration: none;
+	color: #728a6b;
+	font-size: 20px;
+	text-align: center;
+
+	border: solid 2px #728a6b;
+	border-radius: 2em;
+
+	transition: color .1s linear;
+	transition: background-color .1s linear;
+}
+
+.meet__btn:hover{
+	background-color: #728a6b;
+	color: #fff;
 }
