@@ -231,7 +231,7 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 100;
 }
 
-.meet__btnblock{
+.btnblock{
 	text-align: center;
 }
 
@@ -284,7 +284,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .work__title{
-	font-family: "Cormorant SC", serif;
+	font-family: 'Cormorant SC', serif;
 	font-size: 34px;
 	font-weight: 200;
 }
@@ -331,7 +331,7 @@ h1,h2,h3,h4,h5,h6{
 .portfolio__objects{
 	display: flex;
 	justify-content: space-between;
-		line-height: 0;
+	line-height: 0;
 }
 
 .portfolio__item{
@@ -351,6 +351,7 @@ h1,h2,h3,h4,h5,h6{
 .portfolio__box{
 	position: absolute;
 	width: 90%;
+	height: 100%;
 	left: 0%;
 	top: 35%;
 	color: #fff;
@@ -377,4 +378,275 @@ h1,h2,h3,h4,h5,h6{
 .portfolio__item:hover .portfolio__box{
 	opacity: 1;
 	transform: translate(5%,0);
+}
+
+
+/* Services */
+
+.services{
+	padding-top: 30px;
+}
+
+.title.services__title{
+	font-size: 54px;
+}
+
+.services__inner{
+	padding: 50px 0;
+}
+
+.services__line{
+	display: flex;
+}
+
+.services__item{
+	width: 50%;
+	line-height: 0;
+	position: relative;
+	background-color: #000;
+}
+
+.services__item img{
+	width: 100%;
+	opacity: 0.5;
+}
+
+.services__box{
+	position: absolute;
+	text-align: center;
+	line-height: 1.4;
+	width: 86%;
+	left: 7%;
+	top: 28%;
+	color: #fff;
+}
+
+.services__title{
+	font-family: 'Cormorant SC', serif;
+	font-size: 40px;
+	text-align: center;
+	font-weight: 200;
+}
+
+.services__text{
+	font-size: 17px;
+	padding-top: 20px;
+	font-weight: 200;
+	text-align: left;
+}
+
+.services__button{
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+
+	border: solid #fff 1px;
+	border-radius: 2em;
+	padding: 8px 30px;
+	margin-top: 30px;
+
+	transition: color .1s linear;
+	transition: border .1s linear;
+
+}
+
+.services__button:hover {
+	color: #DD7271;
+	border-color: #DD7271;
+}
+
+.services__consultation{
+	text-decoration: none;
+	display: inline-block;
+	color: #728a6b;
+	font-family: 'Cormorant SC', serif;
+	font-weight: 600;
+	font-size: 18px;
+	margin: 70px 0;
+
+	padding: 10px 60px;
+	border: solid #728a6b 3px;
+	border-radius: 2em;
+
+	transition: color .1s linear;
+	transition: border .1s linear;
+}
+
+.services__consultation:hover{
+	color: #DD7271;
+	border-color: #DD7271;
+}
+
+/* SOUL */
+
+.soul{
+	width: 100%;
+	position: relative;
+	padding: 80px 0;
+}
+
+.soul:after{
+	content: "";
+	background: url(img/soul_bg.jpg) center no-repeat;
+	background-size: cover;
+	width: 100%;
+	opacity: 0.2;
+
+	top: 0;
+  	left: 0;
+  	bottom: 0;
+ 	right: 0;
+  	position: absolute;
+ 	z-index: -1; 
+}
+
+.soul__inner{
+	display: flex;
+	padding: 20px 20px 40px;
+	background-color: #fff;
+
+
+}
+
+.soul__photo{
+	width: 37%;
+}
+
+.soul__photo img{
+	width: 100%;
+}
+
+.soul__box{
+	padding: 0px 50px 0px 20px;
+	width: 65%;
+	right: 0;
+}
+
+.soul__title{
+	font-size: 40px;
+}
+.soul__title:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	margin: 5px auto 0;
+	background-color: #333;
+	opacity: 0.2;
+}
+.soul__text{
+	margin-top: 10px;
+	font-size: 17px;
+	line-height: 1.4;
+}
+
+/* REVIEWS */
+
+.reviews{
+	margin: 50px 0;
+}
+
+.title.reviews__maintitle:after{
+	margin: 20px auto 0;
+}
+
+.reviews__item{
+	margin-top: 25px;
+	background-color: #F6F6F6;
+	display: flex;
+	line-height: 0;
+}
+
+.reviews__box{
+	line-height: 1.4;
+	padding: 20px 20px 0 20px;
+}
+
+.reviews__title{
+	font-family: "Cormorant SC", serif;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.reviews__text{
+	font-size: 17px;
+	color: #555;
+	font-weight: 200;
+	margin: 4px 0 ;
+}
+
+/* CONNECT WITH ME */
+
+.connect{
+	margin-top: 100px;
+	margin-bottom: 60px;
+}
+
+.connect__inner{
+	width: 92%;
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+}
+
+.connect__box{
+	padding: 20px 30px;
+}
+
+.connect__title{
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.connect__text{
+	font-size: 17px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 200;
+	margin-bottom: 10px;
+}
+
+.connect__tel{
+	font-size: 24px;
+	margin-top: 0;
+}
+
+/* FOOTER */
+
+.footer{
+	background-color: #212121;
+	background-size: cover;
+	color: #fff;
+}
+
+.footer__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 18px 0;
+}
+
+.footer__logo{
+	font-family: Cormorant SC, serif;
+	font-size: 28px;
+	color: #728a6b;
+	text-transform: uppercase;
+}
+
+.footer__nav{
+	display: flex;
+}
+
+.footer__object a{
+	border: hidden 1px;
+	padding: 29px 5px;
+	text-decoration: none;
+	color: #fff;
+	background-color: rgba(0,0,0,0);
+
+	transition: background .2 linear;
+}
+
+
+.footer__nav a:hover{
+	background-color: rgba(0,0,0,0.2);
 }
