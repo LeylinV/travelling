@@ -6,6 +6,9 @@ body {
 	color: #333;
 	line-height: 1.6;
 }
+html,body{
+	scroll-behavior: smooth;
+}
 
 *,
 *:before,
@@ -649,4 +652,121 @@ h1,h2,h3,h4,h5,h6{
 
 .footer__nav a:hover{
 	background-color: rgba(0,0,0,0.2);
+}
+
+/* MODAL WINDOW */
+.hidden{
+	display: none;
+}
+
+.modal{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left:0;
+	right:0;
+	top:0;
+	bottom: 0;
+	background-color: rgba(0,0,0, 0.5);
+}
+
+.modal__window{
+	position: absolute;
+	left:50%;
+	top:50%;
+	width: 410px;
+	height: 530px;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 25px 30px;
+}
+
+.modal__close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 32px;
+	height: 32px;
+	background-color: #fff;
+	border: none;
+	cursor:pointer;
+}
+.modal__close:before, .modal__close:after{
+	position: absolute;
+	content: '';
+	background-color: #000;
+	width: 80%;
+	height: 1px;
+	border: 1px hidden;
+	border-radius: 2em;
+	transition: transform .3s linear;
+}
+
+.modal__close:before{
+	transform: translate(-50%, 0) rotate(45deg);
+}
+
+.modal__close:after{
+	transform: translate(-50%, 0) rotate(-45deg);
+}
+.modal__close:hover:before{
+	transform: translate(-50%, 0) rotate(225deg);
+}
+.modal__close:hover:after{
+	transform: translate(-50%, 0) rotate(135deg);
+}
+
+.modal__main__title{
+	font-size: 17px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.modal__title{
+	font-size: 16px;
+	font-weight: 400;
+	margin: 10px 0;
+}
+
+.modal__private{
+	display: block;
+}
+
+.modal__input{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 14px 10px 14px 20px;
+	font-size: inherit;
+	border: solid 1px #D1D1D1;
+	background-color: #F2F2F2;
+	border-radius: 0.4em;
+	outline: none;
+	margin-bottom: 8px;
+	color: #888888;
+	font-weight: 200;
+}
+
+.modal__input::placeholder{
+	opacity: 0.4;
+}
+
+.modal__button{
+	width: 100%;
+	height: 60px;
+	margin-top: 20px;
+	outline: none;
+	background-color: #728A6B;
+	border: none;
+	font-size: 24px;
+	color: #fff;
+	cursor:pointer;
+	transition: background .05s linear;
+}
+
+.modal__button:hover{
+	background-color: #3c4939;
+}
+
+.modal__private{
+	font-size: 12px;
 }
