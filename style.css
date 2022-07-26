@@ -137,18 +137,19 @@ h1,h2,h3,h4,h5,h6{
 /* ADVANTAGES */
 
 .advantages{
-	margin: 60px auto;
+	margin: 40px auto;
 }
 
 .advantages__line{
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .advantages__item{
 	width: 300px;
 	text-align: center;
-	margin: 0 10px;
+	width: 33,3333%;
 }
 
 .advantages__img{
@@ -180,7 +181,7 @@ h1,h2,h3,h4,h5,h6{
 /* MEET */
 .meet{
 	padding: 0 auto;
-	margin: 200px 0 0;
+	margin: 100px 0 0;
 }
 
 .title{
@@ -206,6 +207,7 @@ h1,h2,h3,h4,h5,h6{
 .meet__info{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-top: 40px;
 }
 
@@ -251,8 +253,7 @@ h1,h2,h3,h4,h5,h6{
 	border: solid 2px #728a6b;
 	border-radius: 2em;
 
-	transition: color .1s linear;
-	transition: background-color .1s linear;
+	transition: all .1s linear;
 }
 
 .meet__btn:hover{
@@ -277,12 +278,14 @@ h1,h2,h3,h4,h5,h6{
 .work__inner{
 	display: flex;
 	padding: 80px 0;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .work__text{
 	background-color: #fff;
 	padding: 40px 30px 0px 40px;
+	width: 50%;
 
 }
 
@@ -303,17 +306,18 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .work__photos{
-	margin-left: 20px;
+	width: 48%;
 }
 
 .work__photos__main{
-	width: 562px;
+	width: 100%;
 }
 
 .work__photos__second{
 	display: flex;
 	justify-content: space-between;
 	margin-top: 13px;
+	width: 100%;
 }
 .work__photos__second img{
 	width: 48%;
@@ -333,6 +337,7 @@ h1,h2,h3,h4,h5,h6{
 
 .portfolio__objects{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	line-height: 0;
 }
@@ -353,14 +358,17 @@ h1,h2,h3,h4,h5,h6{
 
 .portfolio__box{
 	position: absolute;
+	display: flex;
+	flex-direction: column;
 	width: 90%;
 	height: 100%;
-	left: 0%;
-	top: 35%;
+	top: 0;
+	left: 0;
 	color: #fff;
 	opacity: 0;
 	line-height: 1.4;
-
+	justify-content: center;
+	align-items: center;
 	transition: opacity .2s linear;
 	transition: transform .1s linear;
 }
@@ -387,7 +395,7 @@ h1,h2,h3,h4,h5,h6{
 /* Services */
 
 .services{
-	padding-top: 30px;
+	padding-top: 60px;
 }
 
 .title.services__title{
@@ -400,6 +408,7 @@ h1,h2,h3,h4,h5,h6{
 
 .services__line{
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .services__item{
@@ -416,15 +425,21 @@ h1,h2,h3,h4,h5,h6{
 
 .services__box{
 	position: absolute;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
 	text-align: center;
+	vertical-align: center;
 	line-height: 1.4;
-	width: 86%;
-	left: 7%;
-	top: 28%;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
 	color: #fff;
 }
 
 .services__title{
+	padding-top: 30px;
 	font-family: 'Cormorant SC', serif;
 	font-size: 40px;
 	text-align: center;
@@ -433,9 +448,11 @@ h1,h2,h3,h4,h5,h6{
 
 .services__text{
 	font-size: 17px;
-	padding-top: 20px;
+	padding-top: 40px;
 	font-weight: 200;
-	text-align: left;
+
+	margin: 0 auto;
+	width: 80%;
 }
 
 .services__button{
@@ -446,7 +463,7 @@ h1,h2,h3,h4,h5,h6{
 	border: solid #fff 1px;
 	border-radius: 2em;
 	padding: 8px 30px;
-	margin-top: 30px;
+	margin: 30px auto 0 auto;
 
 	transition: color .1s linear;
 	transition: border .1s linear;
@@ -505,9 +522,9 @@ h1,h2,h3,h4,h5,h6{
 
 .soul__inner{
 	display: flex;
+	flex-wrap: wrap;
 	padding: 20px 20px 40px;
 	background-color: #fff;
-
 
 }
 
@@ -521,7 +538,7 @@ h1,h2,h3,h4,h5,h6{
 
 .soul__box{
 	padding: 0px 50px 0px 20px;
-	width: 65%;
+	width: 60%;
 	right: 0;
 }
 
@@ -588,10 +605,17 @@ h1,h2,h3,h4,h5,h6{
 .connect__inner{
 	width: 92%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	padding-top: 30px;
 }
-
+.connect__img{
+	width: 100%;
+	max-width: 350px;
+}
+.connect__img img{
+	width: 100%;
+}
 .connect__box{
 	padding: 20px 30px;
 }
@@ -605,7 +629,7 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 17px;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 200;
-	margin-bottom: 10px;
+	margin: 0;
 }
 
 .connect__tel{
@@ -675,7 +699,8 @@ h1,h2,h3,h4,h5,h6{
 	position: absolute;
 	left:50%;
 	top:50%;
-	width: 410px;
+	width: 98%;
+	max-width: 410px;
 	height: 530px;
 	transform: translate(-50%, -50%);
 	background-color: #fff;
@@ -838,8 +863,6 @@ h1,h2,h3,h4,h5,h6{
 
 .view__left, .view__right{
 	position: absolute;
-	width: 60px;
-	height: 60px;
 	border: none;
 	background-color: transparent;
 	top: 50%;
@@ -859,7 +882,7 @@ h1,h2,h3,h4,h5,h6{
 
 
 .view__left{
-	left: 100px;
+	left: 0;
 }
 .view__left img{
 	transform: rotate(180deg);
@@ -867,5 +890,382 @@ h1,h2,h3,h4,h5,h6{
 
 
 .view__right{
-	right: 100px;
+	right: 0;
+}
+
+/* MediaTags */
+
+@media (max-width: 1200px){
+
+	/* INTRO */
+	.intro__title{
+		font-size: 68px;
+	}
+	.intro__subtitle{
+		max-width: 900px;
+		font-size: 20px;
+	}
+	/* ADVANTAGES */
+
+	.advantages{
+		margin: 30px 0;
+	}
+	/* LETS MEET */
+	.meet__books{
+		width: 70%;
+	}
+	.meet__right h3{
+		margin-top: 0;
+	}
+	.meet__right p{
+		margin: 6px 0;
+		font-size: 16px;
+	}
+	.meet__btn{
+		margin: 20px;
+		font-size: 17px;
+	}
+
+	/* ADVANTAGES WORK */
+	.work__inner{
+		padding: 40px 0 ;
+	}
+	.work__text{
+		padding-top: 0;
+	}
+	.work__title{
+		font-size: 27px;
+	}
+	.work__title span{
+		display: none;
+	}
+	.work__list{
+		font-size: 16px;
+	}
+	/* PORTFLIO */
+	.portfolio__item{
+		width: 50%;
+	}
+	.portfolio__title{
+		font-size: 23px;
+	}
+	.portfolio__text{
+		font-size: 22px;
+	}
+
+	/* Services */
+	.services__title{
+		font-size: 34px;
+	}
+	.services__text{
+		font-size: 14px;
+	}
+	.services__button{
+		font-size: 14px;
+	}
+
+	/* SOUL */
+	.title.soul__title{
+		font-size: 30px;
+	}
+	.soul__text{
+		font-size: 15px;
+	}
+
+	/* REVIEWS */
+	.reviews__text{
+		font-size: 15px;
+	}
+	/* CONNECT */
+	.connect{
+		margin: 30px 0;
+	}
+}
+
+
+@media (max-width: 990px){
+	/* HEADER */
+	.header__tel{
+		font-size: 18px;
+	}	
+	.header__title{
+		display: none;
+	}	
+
+	/* INTRO */
+	.intro__title{
+		font-size: 55px;
+	}
+	.intro__title span{
+		display: none;
+	}
+	.intro__subtitle{
+		max-width: 900px;
+		font-size: 18px;
+	}
+	.intro__btn{
+		font-size: 17px;
+	}
+
+	/* ADVANTAGES */
+
+	.advantages{
+		margin: 30px 0;
+	}
+	.advantages__item{
+		width: 50%;
+		max-width: 300px;
+	}
+	/* LETS MEET */
+	.meet__books{
+		display: none;
+	}
+	.meet__info{
+		margin: 20px 0;
+	}
+	.meet__right h3{
+		font-size: 25px;
+	}
+	.meet__right p{
+		font-size: 14px;
+	}
+	.title span{
+		display: none;
+	}
+	.title{
+		font-size: 40px;
+	}
+	.title:after{
+		margin: 10px auto;
+	}
+	.meet__btn{
+		margin: 10px;
+		font-size: 14px;
+	}
+	/* ADVANTAGES WORK */
+	.work__text{
+		width: 100%;
+	}
+	.work__photos{
+		display: block;
+		margin: 0 auto;
+		width: 85%;
+	}
+	.work__photos__second{
+		margin-top: 0;
+	}
+	.work__photos__second img{
+		width: 49%;
+	}
+
+	/* PORTFOLIO */
+	.portfolio{
+		margin-top: 20px;
+	}
+	.title.portfolio__title{
+		font-size: 40px;
+	}
+	.portfolio__title{
+		font-size: 18px;
+	}
+	.portfolio__text{
+		font-size: 15px;
+	}
+	/* SERVICES */
+	.services{
+		padding-top: 0px;
+	}
+	.services__inner{
+		padding-top: 15px;
+		padding-bottom: 0px;
+	}
+	.title.services__title{
+		font-size: 40px;
+	}
+	.services__title{
+		font-size: 26px;
+	}
+	.services__text{
+		font-size: 12px;
+		padding-top: 10px;
+	}
+	.services__button{
+		padding: 6px 20px;
+		font-size: 13px;
+	}
+	.services__consultation{
+		margin: 40px 0;
+	}
+	/* SOUL */
+	.title.soul__title{
+		font-size: 30px;
+	}
+	.soul{
+		padding: 40px 0;
+	}
+	.soul__text{
+		font-size: 15px;
+	}
+	/* INTRO */
+	.soul__photo{
+		display: none;
+	}
+	.soul__box{
+		width: 100%;
+		padding: 0px 20px 0px 20px;
+	}
+	.soul__text{
+		font-size: 17px;
+	}
+	/* REVIEWS */
+	.reviews{
+		margin: 15px 0;
+	}
+	.reviews__box{
+		padding-top: 5px;
+	}
+	.reviews__title{
+		font-size:20px;
+	}
+	.reviews__text{
+		font-size: 13px;
+	}
+	/* Connect */
+	.connect__inner{
+		width: 100%;
+	}
+	/* Footer */
+	.footer__inner{
+		justify-content: center;
+	}
+	.footer__nav{
+		display: none;
+	}
+}
+
+@media (max-width:650px){
+	/* HEADER */
+	.header__tel{
+		display: none;
+	}
+	.intro__header{
+		padding: 10px 0;
+	}
+	.header__name{
+		font-size: 22px;
+	}
+	/* INTRO */
+	.intro__suptitle{
+		font-size: 25px;
+	}
+	.intro__title{
+		font-size: 32px;
+	}
+	.intro__subtitle{
+		font-size: 14px;
+		padding: 0 15px;
+	}
+	.intro__btn{
+		font-size:14px;
+	}
+	/* ADVANTAGES */
+	.advantages{
+		margin: 0;
+	}
+	.advantages__item{
+		width: 100%;
+		max-width: 300px;
+	}
+	/* LETS MEET */
+	.meet__info{
+		justify-content: center;
+	}
+	.meet__right{
+		width: 100%;
+	}
+	.meet__photo{
+		width: 80%;
+	}
+	.meet__right h3{
+		font-size: 25px;
+	}
+	.meet__right p{
+		font-size: 14px;
+	}
+	/* ADVANTAGES WORK */
+	.work__text{
+		padding: 0;
+	}
+	.work__list{
+		padding-left: 30px;
+	}
+	.work__photos{
+		width: 100%;
+	}
+	/* PORTFOLIO */
+	.portfolio__item{
+		width: 100%;
+	}
+	.portfolio__title{
+		font-size: 18px;
+	}
+	.portfolio__text{
+		font-size: 15px;
+	}
+	
+	/* SERVICES */
+	.services__item{
+		width: 100%;
+	}
+	.services__title{
+		font-size: 30px;
+	}
+	.services__text{
+		font-size: 12px;
+	}
+	.services__button{
+		font-size: 14px;
+	}
+	.services__consultation{
+		font-size: 15px;
+		padding: 6px 20px;
+	}
+	/* SOUL */
+	.soul{
+		padding: 24px 0;
+	}
+	.title.soul__title{
+		font-size: 25px;
+	}
+	.soul__text{
+		font-size: 14px;
+	}
+  /* Reviews */
+	.reviews__item{
+		flex-direction: column;
+		text-align: center;
+		border: 1px solid rgb(196, 196, 196);
+		border-radius: 3%;
+	}
+	.reviews__avatar{
+		padding-top: 10px;
+	}
+	.reviews__text{
+		text-align: left;
+	}
+	/* Connect */
+	.connect__title{
+		font-size: 18px;
+	}
+	.connect__text{
+		font-size: 15px;
+	}
+	.connect__tel{
+		font-size: 22px;
+		margin-bottom: 0;
+	}
+	/* View */
+	.view__left, .view__right{
+		top: 120%;
+	}
 }

@@ -33,20 +33,22 @@ viewPhotos.forEach(function(item){
     })
 })
 
-viewLeft.addEventListener(`click`, function(){
-    const photoPath = view.querySelector(`#view-image`).src.slice(-34, -5);
-    let photoIndex = Number(view.querySelector(`#view-image`).src.slice(-5, -4));
-    photoIndex = photoIndex == 1 ? 8 : photoIndex-1;
-    view.querySelector(`#view-image`).src = `${photoPath}${photoIndex}.jpg`
-})
+viewLeft.addEventListener(`click`, backPhoto);
+viewRight.addEventListener(`click`, nextPhoto);
+view.querySelector(`#view-image`).addEventListener(`click`, nextPhoto);
 
-viewRight.addEventListener(`click`, function(){
+function nextPhoto(){
     const photoPath = view.querySelector(`#view-image`).src.slice(-34, -5);
     let photoIndex = Number(view.querySelector(`#view-image`).src.slice(-5, -4));
     photoIndex = photoIndex==8 ? 1 : photoIndex+1;
     view.querySelector(`#view-image`).src = `${photoPath}${photoIndex}.jpg`
-})
-
+}
+function backPhoto(){
+    const photoPath = view.querySelector(`#view-image`).src.slice(-34, -5);
+    let photoIndex = Number(view.querySelector(`#view-image`).src.slice(-5, -4));
+    photoIndex = photoIndex == 1 ? 8 : photoIndex-1;
+    view.querySelector(`#view-image`).src = `${photoPath}${photoIndex}.jpg`
+}
 
 view.querySelector(`.view__close`).addEventListener(`click`, function(){view.classList.add(`hidden`)})
 view.addEventListener(`click`, function(){view.classList.add(`hidden`);})
