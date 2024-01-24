@@ -1,5 +1,5 @@
 # Travelling Project
-![Travelling](https://travelling-dun.vercel.app)
+Демонстрация функционала доступна по [ссылке]([https://hh-me-and-kids.vercel.app](https://travelling-dun.vercel.app))
 
 ## Описание проекта
 
