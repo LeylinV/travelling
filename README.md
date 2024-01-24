@@ -1,5 +1,5 @@
 # Travelling Project
-Демонстрация функционала доступна по [ссылке]([https://travelling-dun.vercel.app])
+Демонстрация функционала доступна по [ссылке](https://travelling-dun.vercel.app)
 
 ## Описание проекта
 
